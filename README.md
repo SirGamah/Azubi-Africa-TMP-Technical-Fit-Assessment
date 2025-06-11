@@ -1,5 +1,5 @@
 # Azubi-Africa-TMP-Technical-Fit-Assessment
-Delivarables for the Azubi Africa Talent Mobility Program (TMP) Technical Fit Assessment
+Delivarable for the Azubi Africa Talent Mobility Program (TMP) Technical Fit Assessment
 # 💰 Term Deposit Subscription Prediction App
 
 A Streamlit-based web application that analyzes, models, and predicts whether a bank client will subscribe to a term deposit offer based on their demographic, contact, campaign, and socioeconomic attributes.
