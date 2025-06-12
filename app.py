@@ -19,13 +19,10 @@ from io import BytesIO
 from streamlit_option_menu import option_menu
 
 # Load data
-@st.cache_data
-def load_data():
-    return pd.read_csv("bank-additional-full.csv", sep=';')
-df = load_data()
+df = pd.read_csv("bank-additional-full.csv", sep=';')
 
 # Set page config
-st.set_page_config(page_title="💰 Term Deposit Subscription Predictor", layout="wide")
+st.set_page_config(page_title="💰 Term Deposit Subscription Predictor")
 
 # Navigation menu
 selected = option_menu(
