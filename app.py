@@ -372,33 +372,33 @@ if selected == "Overview":
         </ul>""", unsafe_allow_html=True)
 
     
-    st.subheader("📦 Boxplots for Outlier Detection")
-    tabs = st.tabs([f"{feat.title()}" for feat in features])
+    #st.subheader("📦 Boxplots for Outlier Detection")
+    #tabs = st.tabs([f"{feat.title()}" for feat in features])
 
-    for tab, feature in zip(tabs, features):
-        with tab:
-            fig = px.box(
-                df,
-                x='y',
-                y=feature,
-                color='y',
-                points='all',
-                title=f"{feature.title()} by Subscription",
-                color_discrete_sequence=px.colors.qualitative.Set2
-            )
-            fig.update_layout(
-                xaxis_title="Subscription",
-                yaxis_title=feature.title(),
-                title_x=0.5
-            )
-            st.plotly_chart(fig, use_container_width=True)
-    st.markdown("""**Observations**:
-        <ul>
-        <li>Boxplots reveal outliers in features like <code>age</code>, <code>campaign</code>, and <code>pdays</code>.</li>
-        <li>Outliers in <code>age</code> may represent older clients who are less likely to subscribe.</li>
-        <li><code>pdays</code> shows many clients with no previous contact, indicating a potential area for improvement in outreach strategies.</li>
-        <li>Distributions are skewed; normalization or transformation may help.</li>
-        </ul>""", unsafe_allow_html=True)
+    #for tab, feature in zip(tabs, features):
+        #with tab:
+            #fig = px.box(
+                #df,
+                #x='y',
+                #y=feature,
+                #color='y',
+                #points='all',
+                #title=f"{feature.title()} by Subscription",
+                #color_discrete_sequence=px.colors.qualitative.Set2
+            #)
+            #fig.update_layout(
+                #xaxis_title="Subscription",
+                #yaxis_title=feature.title(),
+                #title_x=0.5
+            #)
+            #st.plotly_chart(fig, use_container_width=True)
+    #st.markdown("""**Observations**:
+        #<ul>
+        #<li>Boxplots reveal outliers in features like <code>age</code>, <code>campaign</code>, and <code>pdays</code>.</li>
+        #<li>Outliers in <code>age</code> may represent older clients who are less likely to subscribe.</li>
+        #<li><code>pdays</code> shows many clients with no previous contact, indicating a potential area for improvement in outreach strategies.</li>
+        #<li>Distributions are skewed; normalization or transformation may help.</li>
+        #</ul>""", unsafe_allow_html=True)
     st.markdown("### Further Observations")
     st.markdown("""**Observations**:
         <ul>
