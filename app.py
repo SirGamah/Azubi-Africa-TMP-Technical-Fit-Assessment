@@ -41,6 +41,8 @@ if selected == "Overview":
     **Overview Page Instructions**  
     - Read through the description of the data.  
     - Understand the business goal: predicting term deposit subscriptions.
+
+    You can check out the Google Colab notebook [here](https://colab.research.google.com/drive/1O2286FFEV44nIdV2qpwY9yp0k9hsd3X-?usp=sharing) for more details on the **Data Exploration** and other intuitions.
     """)
 
     st.title("Term Deposit Subscription Predictor")
