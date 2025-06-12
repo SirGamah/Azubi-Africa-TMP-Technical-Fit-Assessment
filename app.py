@@ -427,7 +427,6 @@ elif selected == "Analysis":
     if selection:
         if selection == 'Client Personal and Socioeconomic Attributes':
             st.subheader("🧠 Client Personal and Socioeconomic Attributes")
-            st.write("Age Distribution")
             fig = px.histogram(df, x='age', color='y', nbins=30,
                            title='Age Distribution by Subscription Status')
             fig.update_layout(
@@ -454,8 +453,7 @@ elif selected == "Analysis":
             </tbody>
             </table>
             """, unsafe_allow_html=True)
-            
-            st.write("Job Type")
+
             fig1 = px.histogram(df, x='job', color='y',
                            title='Subscription by Job Type')
             fig1.update_xaxes(categoryorder='total descending')
@@ -484,7 +482,6 @@ elif selected == "Analysis":
             </table>
             """, unsafe_allow_html=True)
 
-            st.write("Marital Status")
             fig2 = px.histogram(df, x='marital', color='y',
                            title='Subscription by Marital Status')
             fig2.update_xaxes(categoryorder='total descending')
@@ -513,7 +510,6 @@ elif selected == "Analysis":
             </table>
             """, unsafe_allow_html=True)
 
-            st.write("Education Level")
             fig3 = px.histogram(df, x='education', color='y',
                            title='Subscription by Education Level')
             fig3.update_xaxes(categoryorder='total descending')
@@ -543,7 +539,6 @@ elif selected == "Analysis":
             </table>
             """, unsafe_allow_html=True)
 
-            st.write("Default Status")
             fig4 = px.histogram(df, x='default', color='y', title='Subscription by Default Status')
             fig4.update_xaxes(categoryorder='total descending')
             fig4.update_layout(
@@ -572,7 +567,6 @@ elif selected == "Analysis":
             </table>
             """, unsafe_allow_html=True)
 
-            st.write("Housing Loan Status")
             fig5 = px.histogram(df, x='housing', color='y', title='Subscription by Housing Loan Status')
             fig5.update_xaxes(categoryorder='total descending')
             fig5.update_layout(
@@ -600,7 +594,6 @@ elif selected == "Analysis":
             </table>
             """, unsafe_allow_html=True)
 
-            st.write("Personal Loan Status")
             fig6 = px.histogram(df, x='loan', color='y', title='Subscription by Personal Loan Status')
             fig6.update_xaxes(categoryorder='total descending')
             fig6.update_layout(
@@ -633,7 +626,6 @@ elif selected == "Analysis":
         elif selection == 'Last Contact Communication Information':
             st.subheader("📞 Last Contact Communication Information")
 
-            st.write("Contact Method")
             fig7 = px.histogram(df, x='contact', color='y', title='Subscription by Contact Method')
             fig7.update_xaxes(categoryorder='total descending')
             fig7.update_layout(
@@ -662,7 +654,6 @@ elif selected == "Analysis":
             </table>
             """, unsafe_allow_html=True)
 
-            st.write("Month of Last Contact")
             fig8 = px.histogram(df, x='month', color='y', title='Subscription by Month')
             #fig8.update_xaxes(categoryorder='total descending')
             fig8.update_layout(
@@ -690,7 +681,6 @@ elif selected == "Analysis":
             </table>
             """, unsafe_allow_html=True)
 
-            st.write("Day of Last Contact")
             fig9 = px.histogram(df, x='day_of_week', color='y', title='Subscription by Day of the Week')
             #fig9.update_xaxes(categoryorder='total descending')
             fig9.update_layout(
@@ -722,7 +712,6 @@ elif selected == "Analysis":
         elif selection == 'Campaign-Related Features':
             st.subheader("📊 Campaign-Related Features")
 
-            st.write("Campaign Contacts")
             fig10 = px.histogram(df, x='campaign', color='y', nbins=20,
                            title='Subscription by Number of Contacts')
             fig10.update_layout(
@@ -731,8 +720,7 @@ elif selected == "Analysis":
             title_x=0.5
             )
             st.plotly_chart(fig10)
-            
-            st.write("Previous Outcomes")
+
             fig11 = px.histogram(df, x='poutcome', color='y',
                            title='Subscription by Previous Outcome')
             st.plotly_chart(fig11)
@@ -762,7 +750,7 @@ elif selected == "Analysis":
             
         elif selection == 'Economic Context Attributes':
             st.subheader("💰 Economic Context Attributes")
-            st.write("Economic Factor: Employment")
+
             fig12 = px.histogram(df, x='emp.var.rate', color='y',
                            title='Subscription by Employment Variation Rate', nbins=50)
             fig12.update_layout(
@@ -772,7 +760,6 @@ elif selected == "Analysis":
             )
             st.plotly_chart(fig12)
 
-            st.write("Economic Variables: Price Index")
             fig13 = px.histogram(df, x='cons.price.idx', color='y',
                            title='Subscription by Consumer Price Index', nbins=50)
             fig13.update_layout(
@@ -781,8 +768,7 @@ elif selected == "Analysis":
             title_x=0.5
             )
             st.plotly_chart(fig13)
-            
-            st.write("Economic Variables: Confidence Index")
+
             fig14 = px.histogram(df, x='cons.conf.idx', color='y',
                            title='Subscription by Consumer Confidence Index', nbins=50)
             fig14.update_layout(
@@ -792,7 +778,6 @@ elif selected == "Analysis":
             )
             st.plotly_chart(fig14)
 
-            st.write("Economic Variables: Euribor Rate")
             fig15 = px.histogram(df, x='euribor3m', color='y',
                            title='Subscription by Euribor Rate', nbins=50)
             fig15.update_layout(
@@ -802,7 +787,6 @@ elif selected == "Analysis":
             )
             st.plotly_chart(fig15)
 
-            st.write("Economic Variables: Number of Employees")
             fig16 = px.histogram(df, x='nr.employed', color='y',
                            title='Subscription by Number of Employees', nbins=50)
             fig16.update_layout(
@@ -1029,7 +1013,7 @@ elif selected == "About":
     
     **This is part of my delivarables for the Azubi Africa Talent Mobility Program (TMP) Technical Fit Assessment.**
     
-    **Project Repository:** [GitHub](https://github.com/SirGamah/)
+    **Project Repository:** [GitHub](https://github.com/SirGamah/Azubi-Africa-TMP-Technical-Fit-Assessment/tree/main)
     
     **Developer:** Teye Richard Gamah  
     **Contact:** [LinkedIn](https://linkedin.com/in/gamah/) | [Email](mailto:gamahrichard5@gmail.com)
