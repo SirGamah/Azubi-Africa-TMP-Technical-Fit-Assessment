@@ -26,7 +26,7 @@ st.set_page_config(page_title="💰 Term Deposit Subscription Predictor")
 
 # Navigation menu
 selected = option_menu(
-    menu_title=None, 
+    menu_title="💰 Term Deposit Subscription Predictor", 
     options=["Overview", "Analysis", "Train Model", "Make Prediction", "About"],
     icons=["house", "bar-chart", "cpu", "check-circle", "info-circle"],
     menu_icon="cast",
