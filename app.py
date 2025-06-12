@@ -21,7 +21,7 @@ from streamlit_option_menu import option_menu
 # Load data
 @st.cache_data
 def load_data():
-    return pd.read_csv("data/bank-additional-full.csv", sep=';')
+    return pd.read_csv("bank-additional-full.csv", sep=';')
 df = load_data()
 
 # Set page config
